@@ -69,7 +69,7 @@ class LembretesApplicationTests {
 		var dump = pessoaController.editar(1L,new PessoaDTO(1L, "Roberto"));
 
 		//var nome = pessoaController.findByNome("Roberto");
-		//testar para ver se edita de verdade
+
 		Assert.assertEquals("Editado com sucesso", dump.getBody());
 
 	}
