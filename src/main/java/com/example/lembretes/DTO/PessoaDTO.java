@@ -10,9 +10,22 @@ import java.util.List;
 @Setter
 public class PessoaDTO {
 
+    private Long id;
+
     private String nome;
 
     private List<Lembretes> lembretesList;
+
+    public PessoaDTO(){
+
+    }
+
+    public PessoaDTO(Long id, String nome) {
+        this.id = id;
+        this.nome = nome;
+        //this.lembretesList = lembretesList;
+    }
+
 
 }
 

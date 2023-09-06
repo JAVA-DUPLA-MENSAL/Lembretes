@@ -25,5 +25,11 @@ public class Pessoa {
     @OneToMany(mappedBy = "pessoa")
     @JsonBackReference
     private List<Lembretes> lembrete;
+    public Pessoa(){}
 
+
+    public Pessoa(Long id, String nome) {
+        this.id = id;
+        this.nome = nome;
+    }
 }

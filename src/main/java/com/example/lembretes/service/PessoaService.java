@@ -43,7 +43,7 @@ public class PessoaService {
 
         }
         return listPessoaDTO;
-//        return pessoaRepository.findPessoaByNome(nome);
+
     }
 
     public void criar(PessoaDTO pessoaDTO){

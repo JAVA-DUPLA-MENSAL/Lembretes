@@ -22,5 +22,13 @@ public class Lembretes {
     @JoinColumn(name = "pessoa_fk")
     private Pessoa pessoa;
 
+    public  Lembretes(){
 
+    }
+
+    public Lembretes(Long id, String lembrete, Pessoa pessoa) {
+        this.id = id;
+        this.lembrete = lembrete;
+        this.pessoa = pessoa;
+    }
 }
